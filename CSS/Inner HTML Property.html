@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>Inner HTML Property</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript">
+function check()
+{
+	var i=getElementById('MyText');
+	document.getElementById('abc').innerHTML=i.value;
+}
+</script>
+<form name="f1" method="" action="#">
+Enter your Favourite Subject:<input type="text" name="t1" id="MyText">
+<input type="button" name="b1" value="click here" onclick="check()">
+</form>
+</body>
+</html>

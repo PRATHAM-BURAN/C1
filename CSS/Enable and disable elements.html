@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Enable and disable elements</title>
+<script type="text/javascript" language="javascript">
+function disable()
+{
+	document.forms.f1.name.disabled=true;
+}
+function enable()
+{
+	document.forms.f1.name.disabled=false;
+}
+</script>
+</head>
+<body>
+<form name="f1" action="#" method="">
+Name: <input type="name" name="name"><br>
+<input type="button" name="d" value="disable" onclick="disable()">
+<input type="button" name="e" value="enable" onclick="enable()">
+</form>
+</body>
+</html>

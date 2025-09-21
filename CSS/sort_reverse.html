@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>sort_reverse</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript">
+	var a= new Array(5);
+	
+	for(var i=0;i<a.length;i++)
+	{
+		a[i]=parseInt(prompt("enter elements"));
+	}
+
+	document.write("<br> array elements before sort are:");
+	for(var j=0;j<a.length;j++)
+	{
+	document.write("<br>");
+	document.write(a[j]);
+	}
+
+	a.sort();
+
+	document.write("<br> array elements after sort are:");
+	for(var k=0;k<a.length;k++)
+	{
+	document.write("<br> ");
+	document.write(a[k]);
+	}
+
+	a.reverse();
+
+	document.write("<br> array elements after reverse are:");
+	for(var l=0;l<a.length;l++)
+	{
+	document.write("<br>");
+	document.write(a[l]);
+	}
+
+</script>
+</body>
+</html>

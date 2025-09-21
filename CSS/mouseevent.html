@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>mouse</title>
+<script type="text/javascript" language="javascript">
+	function f1()
+	{
+		alert("this is mouse click event");
+		document.bgColor="green";
+	}
+	function f2()
+	{
+		alert("this is onmouseover event");
+		document.bgColor="red";
+	}
+	function f3()
+	{
+		alert("this is onmouseout event");
+		document.bgColor="blue";
+	}
+	function f4()
+	{
+		alert("this is onmouse doubleclick event");
+		document.bgColor="yellow";
+	}
+	function f5()
+	{
+		alert("this is oncontextmenu event");
+		document.bgColor="pink";
+	}
+</script>
+</head>
+<body>
+<center>
+	<input type="button" name="b1" value="green" onclick="f1()">
+	<input type="button" name="b2" value="red" onmouseover="f2()">
+	<input type="button" name="b3" value="blue" onmouseout="f3()">
+	<input type="button" name="b4" value="yellow" ondblclick="f4()">
+	<input type="button" name="b5" value="pink" oncontextmenu="f5()">
+</center>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>readCookie</title>
+<script type="text/javascript" language="javascript">
+	function DeleteCookie()
+	{
+		var cookie_value=username.value;
+		document.cookie="username"+cookie_value+";expires=this.01 Jan 1970 00:00:01 gmt;"
+		alert("cookie is deleted");
+	}
+</script>
+</head>
+<body>
+Enter username:<input type="text" id="username">
+<input type = "button" value = "delete Cookie" onclick = "DeleteCookie()">
+
+</body>
+</html>

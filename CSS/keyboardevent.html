@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>keyboard</title>
+<script type="text/javascript" language="javascript">
+	function f1()
+	{
+		document.fo1.b1.value="onkeyup";
+		document.bgColor="green";
+	}
+	function f2()
+	{
+		document.fo1.b1.value="onkeydown";
+		document.bgColor="red";
+	}
+</script>
+</head>
+<body>
+	<form name="fo1" method="post" action="#">
+	
+	<input type="text" name="t1" onkeydown="f2()" onkeyup="f1()">
+	<br>
+	<input type="button" name="b1"  value="keyevents">
+	</form>
+</body>
+</html>

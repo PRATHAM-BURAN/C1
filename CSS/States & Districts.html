@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>States & Districts</title>
+</head>
+<body>
+    <label for="state">Select State:</label>
+    <select id="state">
+        <option value="">--Select State--</option>
+        <option value="maharashtra">Maharashtra</option>
+        <option value="goa">Goa</option>
+        <option value="tamilnadu">Tamil Nadu</option>
+        <option value="rajasthan">Rajasthan</option>
+    </select>
+	<br>
+	<br>
+    <label for="district">Select District:</label>
+    <select id="district">
+        <option value="">--Select District--</option>
+    </select>
+
+    <script>
+        const stateDistricts = {
+            maharashtra: ["Sindhudurg", "Pune", "Thane", "Satara"],
+            goa: ["Mhapusa", "Pednem", "Bardez", "Torshe"],
+            tamilnadu: ["Chengalpattu", "Coimbatore", "Perambalur", "Salem"],
+            rajasthan: ["ajmer", "Alwar", "Bikaner", "Bundi"]
+        };
+
+        document.getElementById('state').addEventListener('change', function() {
+            const districts = stateDistricts[this.value] || [];
+            const districtSelect = document.getElementById('district');
+            districtSelect.innerHTML = '<option value="">--Select District--</option>';
+            districts.forEach(district => {
+                districtSelect.innerHTML += `<option value="${district.toLowerCase()}">${district}</option>`;
+            });
+        });
+    </script>
+</body>
+</html>

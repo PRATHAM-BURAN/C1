@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>array methods</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript">
+	var a=new Array(5);
+	for(var i=0;i<a.length;i++)
+	{	
+		a[i]=prompt("enter names of your friends");
+	}
+
+	var b=a.find(a=>a.startsWith("s"));
+	document.write(b);
+
+	document.write("<br>");
+
+	var c=a.findIndex(a=>a.startsWith("m"));
+	document.write(c);
+</script>
+</body>
+</html>

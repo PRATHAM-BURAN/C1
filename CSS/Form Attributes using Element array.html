@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Form Attributes using Element array</title>
+</head>
+<body>
+<form name="f1" method="get" action="#">
+College Name:<input type="text" name="t1"><br>
+Department:<input type="text" name="t2"><br>
+Year:<input type="text" name="t3"><br>
+Roll No:<input type="text" name="t4"><br>
+<input type="button" name="b1" value="click" onclick="display()">
+</form>
+<script type="text/javascript" language="javascript">
+function display()
+{
+	with(document.forms.f1)
+	{
+		alert("College name:"+elements[0].value
+		+"Department:"+elements[1].value
+		+"Year:"+elements[2].value
+		+"Roll No:"+elements[3].value);
+	}
+}
+</script>
+</body>
+</html>

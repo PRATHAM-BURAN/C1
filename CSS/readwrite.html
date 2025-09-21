@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>readonly</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript">
+function read()
+{
+	document.forms.f1.t1.readOnly=true;
+}
+function write()
+{
+	document.forms.f1.t1.readOnly=false;
+}
+</script>
+
+<form name="f1" action="#">
+
+name<input type="text" name="t1">
+<br>
+<input type="button" name="b1" value="Read" onclick="read()">
+<input type="button" name="b2" value="write" onclick="write()">
+</form>

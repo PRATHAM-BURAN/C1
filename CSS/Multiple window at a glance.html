@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Multiple window at a glance</title>
+<script type="text/javascript" language="javascript">
+function openWindow()
+{
+	window.open("","","height=100 width=100");
+	window.open("","","height=100 width=100");
+	window.open("","","height=100 width=100");
+}
+function openwindowsForloop()
+{
+	for(var i=0;i<=5;i++)
+	{
+		window.open("","","heigth=100 width=100");
+	}
+}
+</script>
+</head>
+<body>
+<h3>Click the below button to open</h3>
+<input type="button" name="b1"value="open Window" onclick="openWindow()">
+<h3>Click on the below button to open multiple using for loop</h3>
+<input type="button" name="b3"value="open Window" onclick="openwindowsForLoop()">
+</body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Accessing Form Attributes</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript">
+function display()
+{
+	alert("Your College Name is :"+document.forms.f1.t1.value);
+}
+</script>
+<form name="f1" method="" action="#">
+College Name:<input type="text" name="t1"><br>
+<input type="button" name="b1" value="click" onclick="display()">
+</form>
+</body>
+</html>
